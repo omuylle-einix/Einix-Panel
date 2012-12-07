@@ -1,0 +1,13 @@
+TODO:
+- Terminer le design
+
+- Terminer le block news
+- Terminer le block downloads
+- Terminer le block forum
+- Terminer le block membres
+- Terminer le block Pages
+- Terminer le block Chatbox
+
+- Terminer le block login
+
+- Admin interne
