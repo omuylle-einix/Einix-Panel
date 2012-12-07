@@ -1,10 +1,10 @@
 TODO:
 - Terminer le design
 
-- Terminer le block news
-- Terminer le block downloads
-- Terminer le block forum
-- Terminer le block membres
+- Terminer le block news (Done!)
+- Terminer le block downloads (Done!)
+- Terminer le block forum (Done!)
+- Terminer le block membres (Done!)
 - Terminer le block Pages
 - Terminer le block Chatbox
 
