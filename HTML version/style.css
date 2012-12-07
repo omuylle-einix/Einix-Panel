@@ -147,3 +147,18 @@ height:20px;
 .clear{
 clear:both;
 }
+
+/*MEMBRES*/
+#memberc{
+margin:4px 8px;
+width:444px;height:228px;
+background:#e8e8e8
+}
+	.memberpic{
+	margin-top:9px;
+	margin-left:9px;
+	float:left;
+	width:100px;
+	height:100px;
+	}
+		.memberpic img{width:100px; height:100px;}
