@@ -1,0 +1,122 @@
+﻿body {
+margin: 0 auto;
+background:/*url('images/bg.png') top center*/ #eeeeee no-repeat;
+border-top:10px solid #414141;
+padding:0;
+font-family:Calibri, 'Trebuchet MS';
+}
+a{text-decoration:none;}
+#site{
+width:936px;
+margin: 0 auto;
+}
+#header{
+height:90px;
+}
+	#logo{
+	float:left;
+	max-height:70px;
+	margin: 10px 0;
+	}
+		#logo span{
+		position:relative;
+		bottom:25px;
+		left:10px;
+		font-size:24px;
+		text-decoration:underline;
+		}
+	#login{
+	float:right;
+	height:80px;
+	width:250px;
+	background:#797979;
+	}
+	
+#menu{
+height:17.5px;
+width:936px;
+background:#414141;
+border-bottom:17.5px solid #4b4b4b;
+line-height:1.25;
+}
+	#menu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+	}
+		#menu li{			
+		float:left;
+		padding:0 10px;
+		font-size:24px;
+		}
+			#menu li:hover{			
+			background:#4b4b4b;
+			border-bottom:17.5px solid #545454;
+			height:17.5px;
+			color:#fff;
+			}
+		#menu a{
+		color:#fff;
+		}
+
+/* Mise en place des tuiles */
+#tuiles{
+margin-top:10px;
+height:260px;
+}
+#left{
+width:460px;
+float:left;
+background:#fff;
+height:100%;
+}
+#right{
+width:460px;
+float:right;
+height:100%;
+background:#fff;
+}
+.titre{
+height:12px;
+background:#a4a2a2;
+border-bottom:12px solid #adabab;
+font-size:18px;
+padding:0 7px;
+color:#fff;
+}
+.tuilecontent{
+padding:5px;
+}
+.border{
+border-bottom:1px solid grey;
+margin-top:2px;
+}
+/* Différentes tuiles */
+#nleft{
+float:left;
+}
+.ntitle{
+font-size:12px;
+margin-top:2px;
+color:#5e5e5e;
+}
+.autor{
+font-size:10px;
+color:#5e5e5e;
+}
+.nright{
+float:right;
+width:22px;
+height:22px;
+background:url('images/comment.png');
+position:relative;
+top:5px;
+font-size:11px;
+text-align:center;
+line-height:1.4;
+}
+	.nright a{display:block;color:#4e4e4e;}
+.clear{
+clear:both;
+}
