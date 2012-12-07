@@ -129,12 +129,12 @@ margin-right:2px;
 }
 
 /*FORUM*/
-.forum{float:right;position:relative;top:5px;}
-.forum img{
+.forum,.download{float:right;position:relative;top:5px;}
+.forum img,.download img{
 width:19px;
 height:20px;
 }
-	.forum a{display:block;float:left;}
+	.forum a,.download a{display:block;float:left;}
 .clear{
 clear:both;
 }
