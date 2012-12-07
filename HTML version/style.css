@@ -105,6 +105,13 @@ color:#5e5e5e;
 font-size:10px;
 color:#5e5e5e;
 }
+.sepl{
+border-left:1px solid grey;
+height:22px;
+float:left;
+position:relative;
+right:5px
+}
 .nright{
 float:right;
 width:22px;
@@ -112,11 +119,12 @@ height:22px;
 background:url('images/comment.png');
 position:relative;
 top:5px;
-font-size:11px;
+}
+	.nright a{display:block;color:#4e4e4e;font-size:11px;
 text-align:center;
 line-height:1.4;
+margin-right:2px;
 }
-	.nright a{display:block;color:#4e4e4e;}
 .clear{
 clear:both;
 }
