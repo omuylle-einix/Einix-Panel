@@ -85,6 +85,15 @@ font-size:18px;
 padding:0 7px;
 color:#fff;
 }
+.more{
+font-size:10px;
+padding:1px 3px;
+background: rgba(0, 0, 0, 0.3);
+float:right;
+margin-top:4px;
+display:block;
+}
+	.more a{color:#fff;}
 .tuilecontent{
 padding:5px;
 }
