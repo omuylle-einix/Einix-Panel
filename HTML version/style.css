@@ -158,7 +158,10 @@ background:#e8e8e8
 	margin-top:9px;
 	margin-left:9px;
 	float:left;
+	background:grey;
 	width:100px;
 	height:100px;
-	}
+	position:relative;
+	}     
+		.mname{color:black; font-size:14px; width:95px;background:rgba(255,255,255,0.6); height:16px; position:absolute;bottom:0;padding-left:5px;}
 		.memberpic img{width:100px; height:100px;}
