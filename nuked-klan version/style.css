@@ -1,0 +1,183 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+body {
+margin: 0 auto;
+background:url('images/bg.png') top center #eeeeee no-repeat;
+border-top:10px solid #414141;
+padding:0;
+font-family:Calibri, 'Trebuchet MS';
+}
+a{text-decoration:none;}img{border:none;}
+#site{
+width:936px;
+margin: 0 auto;
+}
+#header{
+height:90px;
+}
+	#logo{
+	float:left;
+	max-height:70px;
+	margin: 10px 0;
+	}
+		#logo span{
+		position:relative;
+		bottom:25px;
+		left:10px;
+		font-size:24px;
+		font-family: 'Ubuntu', sans-serif;
+		}
+	#login{
+	float:right;
+	height:80px;
+	width:250px;
+	background:#797979;
+	}
+	
+#menu{
+height:17.5px;
+width:936px;
+background:#414141;
+border-bottom:17.5px solid #4b4b4b;
+line-height:1.4;
+font-family: 'Droid Sans', sans-serif;
+}
+	#menu ul{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	text-align:center;
+	}
+		#menu li{			
+		float:left;
+		padding:0 10px;
+		font-size:24px;
+		}
+			#menu li:hover{			
+			background:#4b4b4b;
+			border-bottom:17.5px solid #545454;
+			height:17.5px;
+			color:#fff;
+			}
+		#menu a{
+		color:#fff;
+		}
+
+/* Mise en place des tuiles */
+#tuiles{
+margin-top:10px;
+height:260px;
+}
+#left{
+width:460px;
+float:left;
+background:#fff;
+height:100%;
+}
+#right{
+width:460px;
+float:right;
+height:100%;
+background:#fff;
+}
+.titre{
+height:12px;
+background:#a4a2a2;
+border-bottom:12px solid #adabab;
+font-size:16px;
+font-family: 'Droid Sans', sans-serif;
+padding:0 7px;
+line-height:1.5;
+color:#fff;
+}
+.more{
+font-size:10px;
+padding:1px 3px;
+background: rgba(0, 0, 0, 0.3);
+float:right;
+margin-top:4px;
+display:block;
+}
+	.more a{color:#fff;}
+.tuilecontent{
+padding:5px;
+}
+.border{
+border-bottom:1px solid grey;
+margin-top:2px;
+}
+.ntitle{
+font-size:12px;
+margin-top:2px;
+color:#5e5e5e;
+}
+.autor{
+font-size:10px;
+color:#5e5e5e;
+}
+.sepl{
+border-left:1px solid grey;
+height:22px;
+float:left;
+position:relative;
+right:5px
+}
+.nleft{
+float:left;
+}
+/* Différentes tuiles */
+
+/*NEWS*/
+.comment{
+float:right;
+width:22px;
+height:22px;
+background:url('images/comment.png');
+position:relative;
+top:5px;
+}
+	.comment a{display:block;color:#4e4e4e;font-size:11px;
+text-align:center;
+line-height:1.4;
+margin-right:2px;
+}
+
+/*FORUM*/
+.forum,.download{float:right;position:relative;top:5px;}
+.forum img,.download img{
+width:19px;
+height:20px;
+}
+	.forum a,.download a{display:block;float:left;}
+.clear{
+clear:both;
+}
+
+/*MEMBRES*/
+#memberc{
+margin:4px 8px;
+width:444px;height:228px;
+background:#e8e8e8
+}
+	.memberpic{
+	margin-top:9px;
+	margin-left:9px;
+	float:left;
+	background:grey;
+	width:100px;
+	height:100px;
+	position:relative;
+	}     
+		.mname{color:black; font-size:14px; width:95px;background:rgba(255,255,255,0.6); height:16px; position:absolute;bottom:0;padding-left:5px;}
+		.memberpic img{width:100px; height:100px;}
+		
+#footer{width:100%; height:30px; background:grey; margin-top:20px;}
+	#fcontent{
+	width:936px;
+	margin: 0 auto;
+	}
+	#fname{
+	float:left;
+	line-height:1.8;
+	}
+	#fcredits {font-size:11px;padding:0;float:right;text-align:center;margin-top:2px;}
