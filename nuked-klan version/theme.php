@@ -252,12 +252,15 @@ exit;
 }
 function news($data)
 {
+
+ $comment = '<a href="index.php?file=News&amp;op=index_comment&amp;news_id=' . $data['id'] . '">' . $data['nb_comment'] . '</a>';
+
 ?>
 			<div class="nleft">
 				<div class="ntitle"><?php echo $data['titre']; ?></div>
 				<div class="autor">Autor: <?php echo $data['auteur']; ?></div>
 			</div>
-			<div class="comment"><div class="sepl"></div><a href="#">1</A></div>
+			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $comment; ?></A></div>
 			<div class="clear"></div>
 			<div class="border"></div>	
 <?php
