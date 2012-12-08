@@ -1,5 +1,6 @@
 TODO:
-- Terminer le design
+- Terminer le design (Done!)
+	-Plusieurs designs avec différentes couleurs? (idée de Zdav)
 
 - Terminer le block news (Done!)
 - Terminer le block downloads (Done!)
@@ -7,6 +8,8 @@ TODO:
 - Terminer le block membres (Done!)
 - Terminer le block Pages
 - Terminer le block Chatbox
+
+- Création d'un block Galeries avec slider? 
 
 - Terminer le block login
 
