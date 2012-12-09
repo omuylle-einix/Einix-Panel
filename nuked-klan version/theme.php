@@ -78,7 +78,10 @@ function top()
 
 <div id="tuiles">
 	<div id="left">
+		<div class="titre">Téléchargements<div class="more"><a href="index.php?file=Download">more +</a></div></div>
+		<div class="tuilecontent">
 		<?php include(dirname(__FILE__) . '/block/telechargement.php'); ?>
+		</div>
 	</div>
 	
 	<div id="right">
