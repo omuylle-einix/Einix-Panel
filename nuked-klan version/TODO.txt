@@ -7,8 +7,9 @@ TODO:
 	
 - Terminer le block downloads
 
-- Terminer le block forum
-
+- Terminer le block forum (DONE)
+	-Fonctionnel à 100%
+	
 - Terminer le block membres (DONE)
 	- Fonctionnel à 100%
 
