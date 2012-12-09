@@ -31,7 +31,7 @@ function top()
 <div id="site">
 
 <div id="header">
-	<div id="logo"><img src="themes/einix-panel/images/logo.png" alt="" /><span>Einix-Tuile</span></div>
+	<div id="logo"><img src="themes/einix-panel/images/logo.png" alt="" /><span><?php echo $nuked['name']; ?></span></div>
 	<div id="login"></div>
 </div>
 
@@ -55,13 +55,13 @@ function top()
 	<div id="left">
 		<div class="titre">News<div class="more"><a href="index.php?file=News">more +</a></div></div>
 		<div class="tuilecontent">
+		<?php include(dirname(__FILE__) . '/block/news.php'); ?>
 <?php } ?>
 				<?php
 				}
 				function footer()
 				{
 				global $nuked, $user, $config;
-
 				?>
 <?php if(checkHome() == true){ ?>
 		</div>			
@@ -124,15 +124,6 @@ function news($data)
  $title = '<a href="index.php?file=News&amp;op=index_comment&amp;news_id=' . $data['id'] . '">' . $data['titre'] . '</a>';
 
 ?>
-			<?php if(checkHome() == true){ ?>
-			<div class="nleft">
-				<div class="ntitle"><?php echo $title; ?></div>
-				<div class="autor">Autor: <?php echo $data['auteur']; ?></div>
-			</div>
-			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $comment; ?></A></div>
-			<div class="clear"></div>
-			<div class="border"></div>
-			<?php } ?>
 			
 			<?php if(checkHome() == false){ ?>
 			<div class="bignews">
