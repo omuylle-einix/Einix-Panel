@@ -37,13 +37,13 @@ function top()
 
 <div id="menu">
 	<ul>
-		<li><a href="#">Home</a></li>
-		<li><a href="#">News</a></li>
-		<li><a href="#">Archives</a></li>
-		<li><a href="#">Téléchargements</a></li>
-		<li><a href="#">Galeries</a></li>
-		<li><a href="#">Contact</a></li>
-		<li><a href="#">Forum</a></li>
+		<li><a href="index.php">Home</a></li>
+		<li><a href="index.php?File=News">News</a></li>
+		<li><a href="index.php?File=Archives">Archives</a></li>
+		<li><a href="index.php?File=Download">Téléchargements</a></li>
+		<li><a href="index.php?File=Gallery">Galeries</a></li>
+		<li><a href="index.php?File=Contact">Contact</a></li>
+		<li><a href="index.php?File=Forum">Forum</a></li>
 	</ul>
 	<div class="clear"></div>
 </div>
