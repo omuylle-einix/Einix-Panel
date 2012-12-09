@@ -31,7 +31,7 @@ function top()
 <div id="site">
 
 <div id="header">
-	<div id="logo"><img src="themes/einix-panel/images/logo.png" alt="" /><span><?php echo $nuked['name']; ?></span></div>
+	<div id="logo"><img src="themes/einix-panel/images/logo.png" alt="" /><span>Einix-Tuile</span></div>
 	<div id="login"></div>
 </div>
 
@@ -79,10 +79,7 @@ function top()
 	</div>
 	
 	<div id="right">
-		<div class="titre">Membres<div class="more"><a href="index.php?file=Members">more +</a></div></div>
-		<div id="memberc">
 		<?php include(dirname(__FILE__) . '/block/membre.php'); ?>
-		</div>
 	</div>
 </div>
 <div id="tuiles">
