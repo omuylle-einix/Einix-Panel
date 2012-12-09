@@ -167,7 +167,8 @@ background:#e8e8e8
 	height:100px;
 	position:relative;
 	}     
-		.mname{color:black; font-size:14px; width:95px;background:rgba(255,255,255,0.6); height:16px; position:absolute;bottom:0;padding-left:5px;}
+		.mname{font-size:14px; width:95px;background:rgba(255,255,255,0.6); height:16px; position:absolute;bottom:0;padding-left:5px;}
+			.mname a{color:black;display:block}
 		.memberpic img{width:100px; height:100px;}
 		
 #footer{width:100%; height:30px; background:grey; margin-top:20px;}
