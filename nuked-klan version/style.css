@@ -8,7 +8,7 @@ padding:0;
 font-family:Calibri, 'Trebuchet MS';
 font-size:12px;
 }
-a{text-decoration:none;}img{border:none;}
+a{text-decoration:none;color:#5e5e5e}img{border:none;}
 #site{
 width:936px;
 margin: 0 auto;
@@ -110,14 +110,9 @@ margin-top:2px;
 .ntitle{
 font-size:12px;
 margin-top:2px;
-
-}
-.ntitle a{
-color:#5e5e5e;
 }
 .autor{
 font-size:10px;
-color:#5e5e5e;
 }
 .sepl{
 border-left:1px solid grey;
