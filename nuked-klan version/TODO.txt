@@ -3,10 +3,17 @@ TODO:
 	-Plusieurs designs avec différentes couleurs? (idée de Zdav)
 
 - Terminer le block news (Done!)
-- Terminer le block downloads (Done!)
-- Terminer le block forum (Done!)
-- Terminer le block membres (Done!)
+	- Utilise actuellement la fonction footer. Je vais le transformer en un block unique
+	
+- Terminer le block downloads
+
+- Terminer le block forum
+
+- Terminer le block membres (DONE)
+	- Fonctionnel à 100%
+
 - Terminer le block Pages
+
 - Terminer le block Chatbox
 
 - Création d'un block Galeries avec slider? 

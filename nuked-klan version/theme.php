@@ -69,7 +69,10 @@ function top()
 	</div>
 	
 	<div id="right">
+		<div class="titre">Forum<div class="more"><a href="index.php?file=Forum">more +</a></div></div>
+		<div class="tuilecontent">
 		<?php include(dirname(__FILE__) . '/block/forum.php'); ?>
+		</div>
 	</div>
 </div>
 
@@ -79,7 +82,10 @@ function top()
 	</div>
 	
 	<div id="right">
+		<div class="titre">Membres<div class="more"><a href="#">more +</a></div></div>
+		<div id="memberc">
 		<?php include(dirname(__FILE__) . '/block/membre.php'); ?>
+		</div>
 	</div>
 </div>
 <div id="tuiles">

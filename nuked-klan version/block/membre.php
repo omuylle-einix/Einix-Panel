@@ -15,7 +15,7 @@ while (list($pseudo) = mysql_fetch_array($sql))
 ?>
 			<div class="memberpic">
 				<a href="index.php?file=Members&op=detail&autor=<?php echo $pseudo; ?>"><img src="<?php echo $avatar; ?>"/></a>
-				<div class="mname"><a href="index.php?file=Members&op=detail&autor=<?php echo $pseudo; ?>"><?php echo $pseudo; ?></div>
+				<div class="mname"><a href="index.php?file=Members&op=detail&autor=<?php echo $pseudo; ?>"><?php echo $pseudo; ?></a></div>
 			</div>			
 <?php
 	$compteur++;
