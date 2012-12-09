@@ -48,10 +48,13 @@ function top()
 	<div class="clear"></div>
 </div>
 
+<div id="<?php echo !checkHome() ? 'big' : '' ; ?>">
+<?php if(checkHome() === true){ ?>
 <div id="tuiles">
 	<div id="left">
 		<div class="titre">News<div class="more"><a href="#">more +</a></div></div>
 		<div class="tuilecontent">
+<?php } ?>
 				<?php
 				}
 				function footer()
@@ -59,6 +62,7 @@ function top()
 				global $nuked, $user, $config;
 
 				?>
+<?php if(checkHome() === true){ ?>
 		</div>			
 
 	</div>
@@ -236,6 +240,8 @@ function top()
 	<div id="right">
 		<div class="titre">Téléchargements<div class="more"><a href="#">more +</a></div></div>
 	</div>
+</div>
+<?php } ?>
 </div>
 </div>
 
