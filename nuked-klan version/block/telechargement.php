@@ -16,7 +16,7 @@ while (list($titre, $autor, $id) = mysql_fetch_array($sql))
 				<div class="ntitle"><a href="index.php?file=Download&op=description&dl_id=<?php echo $id; ?>"><?php echo $titre; ?></a></div>
 				<div class="autor">Category: Xperia Miro</div>
 			</div>
-			<div class="download"><div class="sepl"></div><a href="#"><img src="themes/einix-panel/images/download.png" /></a></div>
+			<div class="download"><div class="sepl"></div><a href="index.php?file=Download&op=description&dl_id=<?php echo $id; ?>"><img src="themes/einix-panel/images/download.png" /></a></div>
 			<div class="clear"></div>
 			<div class="border"></div>
 		
