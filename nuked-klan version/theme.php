@@ -38,21 +38,22 @@ function top()
 <div id="menu">
 	<ul>
 		<li><a href="index.php">Home</a></li>
-		<li><a href="index.php?File=News">News</a></li>
-		<li><a href="index.php?File=Archives">Archives</a></li>
-		<li><a href="index.php?File=Download">Téléchargements</a></li>
-		<li><a href="index.php?File=Gallery">Galeries</a></li>
-		<li><a href="index.php?File=Contact">Contact</a></li>
-		<li><a href="index.php?File=Forum">Forum</a></li>
+		<li><a href="index.php?file=News">News</a></li>
+		<li><a href="index.php?file=Archives">Archives</a></li>
+		<li><a href="index.php?file=Download">Téléchargements</a></li>
+		<li><a href="index.php?file=Gallery">Galeries</a></li>
+		<li><a href="index.php?file=Contact">Contact</a></li>
+		<li><a href="index.php?file=Forum">Forum</a></li>
 	</ul>
 	<div class="clear"></div>
 </div>
 
 <div id="<?php echo !checkHome() ? 'big' : '' ; ?>">
-<?php if(checkHome() === true){ ?>
+<div id="<?php echo !checkHome() ? 'bigc' : '' ; ?>">
+<?php if(checkHome() == true){ ?>
 <div id="tuiles">
 	<div id="left">
-		<div class="titre">News<div class="more"><a href="#">more +</a></div></div>
+		<div class="titre">News<div class="more"><a href="index.php?file=News">more +</a></div></div>
 		<div class="tuilecontent">
 <?php } ?>
 				<?php
@@ -62,7 +63,7 @@ function top()
 				global $nuked, $user, $config;
 
 				?>
-<?php if(checkHome() === true){ ?>
+<?php if(checkHome() == true){ ?>
 		</div>			
 
 	</div>
@@ -244,6 +245,7 @@ function top()
 <?php } ?>
 </div>
 </div>
+</div>
 
 <div id="footer">
 <div id="fcontent">
@@ -260,15 +262,29 @@ function news($data)
 {
 
  $comment = '<a href="index.php?file=News&amp;op=index_comment&amp;news_id=' . $data['id'] . '">' . $data['nb_comment'] . '</a>';
+ $bigcomment = '<a href="index.php?file=News&amp;op=index_comment&amp;news_id=' . $data['id'] . '">' . $data['nb_comment'] . ' comments' . '</a>';
+ $title = '<a href="index.php?file=News&amp;op=index_comment&amp;news_id=' . $data['id'] . '">' . $data['titre'] . '</a>';
 
 ?>
+			<?php if(checkHome() == true){ ?>
 			<div class="nleft">
-				<div class="ntitle"><?php echo $data['titre']; ?></div>
+				<div class="ntitle"><?php echo $title; ?></div>
 				<div class="autor">Autor: <?php echo $data['auteur']; ?></div>
 			</div>
 			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $comment; ?></A></div>
 			<div class="clear"></div>
-			<div class="border"></div>	
+			<div class="border"></div>
+			<?php } ?>
+			
+			<?php if(checkHome() == false){ ?>
+			<div class="bignews">
+				<div class="bigtitre"><?php echo $data['titre']; ?></div>
+				<div class="border"></div>
+				<?php echo $data['texte']; ?>
+				<div class="bigcomment"><?php echo $bigcomment; ?></div>
+			</div>
+			
+			<?php } ?>
 <?php
 }
 function opentable(){}

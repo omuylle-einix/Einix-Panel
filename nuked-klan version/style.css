@@ -6,13 +6,9 @@ background:url('images/bg.png') top center #eeeeee no-repeat;
 border-top:10px solid #414141;
 padding:0;
 font-family:Calibri, 'Trebuchet MS';
+font-size:12px;
 }
 a{text-decoration:none;}img{border:none;}
-#big{
-background:white;
-width:936px;
-height:auto;
-}
 #site{
 width:936px;
 margin: 0 auto;
@@ -114,6 +110,9 @@ margin-top:2px;
 .ntitle{
 font-size:12px;
 margin-top:2px;
+
+}
+.ntitle a{
 color:#5e5e5e;
 }
 .autor{
@@ -186,3 +185,33 @@ background:#e8e8e8
 	line-height:1.8;
 	}
 	#fcredits {font-size:11px;padding:0;float:right;text-align:center;margin-top:2px;}
+	
+/* BIG */
+#big{
+background:white;
+width:100%;
+height:auto;
+}
+	#bigc{
+	padding:10px;
+	}
+	#big img{max-width:750px;}
+	
+.bignews{
+margin-bottom:10px;
+}
+	.bigtitre{
+	font-size:20px;
+	}
+	
+	.bigcomment{
+	font-size:14px;
+	padding:1px 3px;
+	background: rgba(0, 0, 0, 0.3);
+	margin-top:4px;
+	width:100px;
+	text-align:center;
+	height:20px;
+	line-height:1.45;
+	}
+		.bigcomment a{color:#fff;display:block;}
