@@ -118,10 +118,12 @@ display:block;
 padding:5px;
 }
 .border{
-border-bottom:2px solid #fdfdfd;
+border-bottom:1px solid grey;
 margin-top:2px;
-margin-bottom:10px;
 }
+ .bordern{
+ margin-bottom:10px;
+ }
 .ntitle{
 font-size:12px;
 margin-top:2px;

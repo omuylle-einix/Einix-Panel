@@ -136,7 +136,7 @@ function news($data)
 			<?php if(checkHome() == false){ ?>
 			<div class="bignews">
 				<div class="bigtitre"><?php echo $data['titre']; ?></div>
-				<div class="border"></div>
+				<div class="bordern"></div>
 				<?php echo $data['texte']; ?>
 				<div class="bigcomment"><?php echo $bigcomment; ?></div>
 			</div>
