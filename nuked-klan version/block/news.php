@@ -8,7 +8,7 @@ while (list($titre, $auteur, $id) = mysql_fetch_array($sql))
 {
 	$titre = stripslashes($titre);
 
-	if (strlen($titre) > 30) $titre = substr($titre, 0, 30) . "(...)";
+	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
 	
  $comment = '<a href="index.php?file=News&amp;op=index_comment&amp;news_id=' . $data['id'] . '">' . $data['nb_comment'] . '</a>';
 

@@ -8,7 +8,7 @@ while (list($titre, $autor, $id) = mysql_fetch_array($sql))
 {
 	$titre = stripslashes($titre);
 
-	if (strlen($titre) > 30) $titre = substr($titre, 0, 30) . "(...)";
+	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
 	
 
 ?>

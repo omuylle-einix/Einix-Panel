@@ -9,7 +9,7 @@ while (list($pseudo) = mysql_fetch_array($sql))
 	$titre = stripslashes($titre);
 	$avatar = !$user_data['avatar'] ? 'modules/User/images/noavatar.png' : checkimg($user_data['avatar']);
 
-	if (strlen($titre) > 25) $titre = substr($titre, 0, 25) . "(...)";
+	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
 	
 
 ?>

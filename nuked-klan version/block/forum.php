@@ -8,7 +8,7 @@ while (list($thread_id, $titre, $time, $forum_id, $last_post, $auteur, $auteur_i
 {
 	$titre = stripslashes($titre);
 
-	if (strlen($titre) > 30) $titre = substr($titre, 0, 30) . "(...)";
+	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
 	
 
 ?>		
