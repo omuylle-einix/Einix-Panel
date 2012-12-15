@@ -9,7 +9,6 @@ $compteur = 0;
 while (list($titre, $url, $sid) = mysql_fetch_array($sql))
 {
 	$titre = stripslashes($titre);
-	$avatar = !$user_data['avatar'] ? 'modules/User/images/noavatar.png' : checkimg($user_data['avatar']);
 
 	if (strlen($titre) > 10) $titre = substr($titre, 0, 10) . "(...)";
 	
@@ -33,7 +32,7 @@ else
 ?>
 
 			<div class="memberpic">
-				<img src="<?php echo $avatar; ?>"/>
+				<img src="themes/einix-panel/images/noimage.png"/>
 			</div>	
 
 <?php
