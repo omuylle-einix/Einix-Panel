@@ -101,7 +101,7 @@ function top()
 </div>
 <div id="tuiles">
 	<div id="left">
-		<div class="titre">Galeries<div class="more"><a href="#">more +</a></div></div>
+		<?php include(dirname(__FILE__) . '/block/gallery.php'); ?>
 	</div>
 	
 	<div id="right">
