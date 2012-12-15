@@ -1,3 +1,5 @@
+		<div class="titre">Membres<div class="more"><a href="#">more +</a></div></div>
+		<div id="memberc">
 <?php
 
 $sql = mysql_query("SELECT pseudo, date, avatar FROM " . $nuked['prefix'] . "_users ORDER BY date DESC LIMIT 0,8");
@@ -37,3 +39,4 @@ else
 	}
 }
 ?>
+</div>

@@ -1,3 +1,5 @@
+		<div class="titre">Forum<div class="more"><a href="index.php?file=Forum">more +</a></div></div>
+		<div class="tuilecontent">
 <?php
 
 $sql = mysql_query("SELECT id, titre, date, forum_id, last_post, auteur, auteur_id FROM " . $nuked['prefix'] . "_forums_threads ORDER BY last_post DESC LIMIT 0, 7"); 
@@ -41,3 +43,4 @@ else
 	}
 }
 ?>
+</div>

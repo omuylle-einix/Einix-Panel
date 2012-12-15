@@ -61,8 +61,6 @@ function top()
 <?php if(checkHome() == true){ ?>
 <div id="tuiles">
 	<div id="left">
-		<div class="titre">News<div class="more"><a href="index.php?file=News">more +</a></div></div>
-		<div class="tuilecontent">
 		<?php include(dirname(__FILE__) . '/block/news.php'); ?>
 <?php } ?>
 				<?php
@@ -72,31 +70,20 @@ function top()
 				global $nuked, $user, $config;
 				?>
 <?php if(checkHome() == true){ ?>
-		</div>			
-
 	</div>
 	
 	<div id="right">
-		<div class="titre">Forum<div class="more"><a href="index.php?file=Forum">more +</a></div></div>
-		<div class="tuilecontent">
 		<?php include(dirname(__FILE__) . '/block/forum.php'); ?>
-		</div>
 	</div>
 </div>
 
 <div id="tuiles">
 	<div id="left">
-		<div class="titre">Téléchargements<div class="more"><a href="index.php?file=Download">more +</a></div></div>
-		<div class="tuilecontent">
 		<?php include(dirname(__FILE__) . '/block/telechargement.php'); ?>
-		</div>
 	</div>
 	
 	<div id="right">
-		<div class="titre">Membres<div class="more"><a href="#">more +</a></div></div>
-		<div id="memberc">
 		<?php include(dirname(__FILE__) . '/block/membre.php'); ?>
-		</div>
 	</div>
 </div>
 <div id="tuiles">

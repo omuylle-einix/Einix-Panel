@@ -1,3 +1,5 @@
+		<div class="titre">News<div class="more"><a href="index.php?file=News">more +</a></div></div>
+		<div class="tuilecontent">
 <?php
 
 $sql = mysql_query("SELECT titre, auteur, id FROM " . $nuked['prefix'] . "_news ORDER BY date DESC LIMIT 0,7");
@@ -43,3 +45,4 @@ else
 	}
 }
 ?>
+</div>

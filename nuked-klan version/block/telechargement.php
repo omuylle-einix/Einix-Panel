@@ -1,3 +1,5 @@
+		<div class="titre">Téléchargements<div class="more"><a href="index.php?file=Download">more +</a></div></div>
+		<div class="tuilecontent">
 <?php
 
 $sql = mysql_query("SELECT titre, autor, id FROM " . $nuked['prefix'] . "_downloads ORDER BY date DESC LIMIT 0,7");
@@ -40,3 +42,4 @@ else
 	}
 }
 ?>
+</div>
