@@ -14,7 +14,7 @@ while (list($titre, $url, $sid) = mysql_fetch_array($sql))
 	
 
 ?>
-			<div class="memberpic">
+			<div class="gallerypic">
 				<a href="index.php?file=Gallery&op=description&sid=<?php echo $sid; ?>"><img src="<?php echo $url; ?>"/></a>
 			</div>			
 <?php
@@ -31,7 +31,7 @@ else
 		$na++;
 ?>
 
-			<div class="memberpic">
+			<div class="gallerypic">
 				<img src="themes/einix-panel/images/noimage.png"/>
 			</div>	
 

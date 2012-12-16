@@ -33,13 +33,7 @@ function top()
 <div id="header">
 	<div id="logo"><img src="themes/einix-panel/images/logo.png" alt="" /><span><?php echo $nuked['name']; ?></span></div>
 	<div id="login">
-		<div id="loginc">
-			<div id="loginpic"></div>
-			<div id="logincontent">
-			dwfhsrh rehzrsh
-			</div>
-		</div>
-		<div class="clear"></div>
+		<?php include(dirname(__FILE__) . '/block/login.php'); ?>
 	</div>
 </div>
 

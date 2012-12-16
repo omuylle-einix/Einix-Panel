@@ -34,23 +34,45 @@ height:90px;
 	float:right;
 	height:80px;
 	width:250px;
-	background:#797979;
+	background:rgba(255,255,255,0.3);
 	}
 		#loginc{
 		padding:5px;
 		}
-			#loginpic{
-			width:70px;
-			height:70px;
-			background:white;
+		#logincontent a{color:#000;}
+		#logincontent2 {margin-top:5px;margin-left:75px;}
+		#logincontent2 a{color:#000;}
+			#loginpic img{
+			width:65px;
+			height:65px;
 			float:left;
 			}
 			#logincontent{
 			margin-left:75px;
-			background:#fff;
 			width:auto;
 			height:70px;
 			}
+				#pseudo, #pass{
+				width:159px;
+				height:17px;
+				background:#bcbcbc;
+				padding:0px 3px;
+				border:none;
+				margin-bottom:5px;
+				}
+				#submit button{
+				float:left;
+				height:17px;
+				background:#bcbcbc;
+				font-size:11px;
+				border:1px solid white;	
+				}
+				#joinus{
+				float:right;
+				color:#fff;
+				margin-top:3px;
+				}
+				
 #menu{
 height:17.5px;
 width:936px;
@@ -188,9 +210,21 @@ background:#e8e8e8
 	height:100px;
 	position:relative;
 	}     
+		.memberpic img{width:100px;height:100px;}
 		.mname{font-size:14px; width:95px;background:rgba(255,255,255,0.6); height:16px; position:absolute;bottom:0;padding-left:5px;}
 			.mname a{color:black;display:block}
-		.memberpic img{width:100px; height:100px;}
+		
+/*Galeries */
+	.gallerypic{
+	margin-top:9px;
+	margin-left:9px;
+	float:left;
+	background:grey;
+	width:100px;
+	height:100px;
+	position:relative;
+	}     
+		.gallerypic img{width:100px; height:100px;}
 		
 #footer{width:100%; height:30px; background:grey; margin-top:20px;}
 	#fcontent{
