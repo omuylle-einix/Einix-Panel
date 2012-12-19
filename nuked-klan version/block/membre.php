@@ -2,16 +2,18 @@
 		<div id="memberc">
 <?php
 
-$sql = mysql_query("SELECT pseudo, date, avatar FROM " . $nuked['prefix'] . "_users ORDER BY date DESC LIMIT 0,8");
+$sql = mysql_query("SELECT pseudo, avatar, date FROM " . $nuked['prefix'] . "_users ORDER BY date DESC LIMIT 0,8");
 
 $compteur = 0;
 
-while (list($pseudo) = mysql_fetch_array($sql))
+while (list($pseudo, $avatar, $date) = mysql_fetch_array($sql))
 {
 	$titre = stripslashes($titre);
-	$avatar = !$user_data['avatar'] ? 'modules/User/images/noavatar.png' : checkimg($user_data['avatar']);
 
 	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
+	
+            if(empty($avatar)) $avatar = "modules/User/images/noavatar.png";
+
 	
 
 ?>
