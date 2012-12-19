@@ -1,4 +1,4 @@
-		<div class="titre">Membres<div class="more"><a href="#">more +</a></div></div>
+		<div class="titre">Membres<div class="more"><a href="index.php?file=Members">more +</a></div></div>
 		<div id="memberc">
 <?php
 
