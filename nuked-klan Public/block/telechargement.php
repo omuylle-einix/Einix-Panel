@@ -2,37 +2,27 @@
 		<div class="tuilecontent">
 <?php
 
-$sql = mysql_query("SELECT titre, autor, id FROM " . $nuked['prefix'] . "_downloads ORDER BY date DESC LIMIT 0,7");
+$sql = mysql_query("SELECT id, titre, autor, type FROM ".DOWNLOAD_TABLE." ORDER BY date DESC LIMIT 0,7");
 
 $compteur = 0;
 
-while (list($titre, $autor, $id) = mysql_fetch_array($sql))
-{
-	$titre = stripslashes($titre);
-
-	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
-	
-        if ($visiteur >= $level)
-            $sql2 = mysql_query("SELECT titre, parentid FROM " . DOWNLOAD_CAT_TABLE . " WHERE cid = '" . $cat . "'");
-            list($cat_name, $parentid) = mysql_fetch_array($sql2);
-            $cat_name = printSecuTags($cat_name);
-
-            if ($cat == 0) {
-                $category = "N/A";
-            } else if ($parentid > 0) {
-                $sql3 = mysql_query("SELECT titre, parentid FROM " . DOWNLOAD_CAT_TABLE . " WHERE cid = '" . $parentid . "'");
-                list($parent_name) = mysql_fetch_array($sql3);
-                $parent_name = printSecuTags($parent_name);
-
-                $category = "<a href=\"index.php?file=Download&amp;op=categorie&amp;cat=" . $parentid . "\">" . $parent_name . "</a> -&gt; <a href=\"index.php?file=Download&amp;op=categorie&amp;cat=" . $cat . "\">" . $cat_name . "</a>";
-            } else {
-                $category = "<a href=\"index.php?file=Download&amp;op=categorie&amp;cat=" . $cat . "\">" . $cat_name . "</a>";
-            }
+                while(list($id, $titre, $autor, $cat) = mysql_fetch_array($sql))
+                {
+				
+					$sql2 = mysql_query("SELECT titre, parentid FROM " . DOWNLOAD_CAT_TABLE . " WHERE cid = '" . $cat . "'");
+					list($cat_name, $parentid) = mysql_fetch_array($sql2);
+					$cat_name = printSecuTags($cat_name);
+						
+					$sql3 = mysql_query("SELECT titre FROM " . DOWNLOAD_CAT_TABLE . " WHERE cid = '" . $parentid . "'");
+					list($parent_name) = mysql_fetch_array($sql3);
+					$parent_name = printSecuTags($parent_name);
+ 
+                    if(strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
 
 ?>
 			<div class="nleft">
 				<div class="ntitle"><a href="index.php?file=Download&op=description&dl_id=<?php echo $id; ?>"><?php echo $titre; ?></a></div>
-				<div class="autor">Category: <?php echo $category; ?></div>
+				<div class="autor">Category: <a href="index.php?file=Download&amp;op=categorie&amp;cat=<?php echo $parentid; ?>"><b><?php echo $parent_name; ?></b></a> -&gt; <a href="index.php?file=Download&amp;op=categorie&amp;cat=<?php echo $cat;?>"><?php echo $cat_name; ?></a></div>
 			</div>
 			<div class="download"><div class="sepl"></div><a href="index.php?file=Download&op=description&dl_id=<?php echo $id; ?>"><img src="themes/einix-panel/images/download.png" /></a></div>
 			<div class="clear"></div>
