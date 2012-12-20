@@ -39,7 +39,12 @@ else
 		$na++;
 ?>
 		
- <p>Aucun message n'a été enregistré..</p>
+			<div class="nleft">
+				<div class="ntitle"><span style="position:relative;top:5px;">Aucune news à afficher pour le moment</span></div>
+			</div>
+			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $comment; ?></A></div>
+			<div class="clear"></div>
+			<div class="border"></div>
 
 <?php
 	}

@@ -107,8 +107,7 @@ font-family: 'Droid Sans', sans-serif;
 		}
 			#menu li:hover{			
 			background:#4b4b4b;
-			border-bottom:17.5px solid #545454;
-			height:17.5px;
+			height:35px;
 			color:#fff;
 			}
 		#menu a{
@@ -180,6 +179,7 @@ right:5px
 }
 .nleft{
 float:left;
+height:29px;
 }
 /* Différentes tuiles */
 
