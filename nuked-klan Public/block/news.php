@@ -8,6 +8,10 @@ $compteur = 0;
 
 while (list($titre, $auteur, $id) = mysql_fetch_array($sql))
 {
+
+    $sql2 = mysql_query("SELECT im_id FROM ".COMMENT_TABLE." WHERE im_id = '{$TabNews['id']}' AND module = 'news'");
+    $nb_comment = mysql_num_rows($sql2);
+
 	$titre = stripslashes($titre);
 
 	if (strlen($titre) > 70) $titre = substr($titre, 0, 70) . "(...)";
@@ -21,7 +25,7 @@ while (list($titre, $auteur, $id) = mysql_fetch_array($sql))
 				<div class="ntitle"><a href="index.php?file=News&op=index_comment&news_id=<?php echo $id; ?>"/><?php echo $titre; ?></a></div>
 				<div class="autor">Autor: <?php echo $auteur ?></div>
 			</div>
-			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $comment; ?></A></div>
+			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $nb_comment; ?></A></div>
 			<div class="clear"></div>
 			<div class="border"></div>
 		
@@ -42,7 +46,7 @@ else
 			<div class="nleft">
 				<div class="ntitle"><span style="position:relative;top:5px;">Aucune news à afficher pour le moment</span></div>
 			</div>
-			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $comment; ?></A></div>
+			<div class="comment"><div class="sepl"></div><a href="#">/</A></div>
 			<div class="clear"></div>
 			<div class="border"></div>
 
