@@ -97,8 +97,8 @@ function top()
 		<?php include(dirname(__FILE__) . '/block/gallery.php'); ?>
 	</div>
 	
-	<div id="right">
-		<div class="titre">Téléchargements<div class="more"><a href="#">more +</a></div></div>
+	<div id="left">
+		<?php include(dirname(__FILE__) . '/block/gallery.php'); ?>
 	</div>
 </div>
 <?php } ?>
