@@ -26,6 +26,18 @@ function top()
 	<link href="images/favicon.ico" type="image/x-icon" rel="shortcut icon" />
 	
 	<link rel="stylesheet" media="screen" type="text/css" title="style" href="themes/einix-panel/style.css" />
+	
+	<?php if(checkHome() == true){ ?>
+	  <style type="text/css">
+		  .pgtitle {
+			visibility: hidden;
+			}
+		  .pgactuel{visibility: hidden;}
+		  .pgnumber{visibility: hidden;}
+		  .pgnext{visibility: hidden;}
+	  </style>
+	<?php } ?>	
+
 </head>
 <body>
 <div id="site">
