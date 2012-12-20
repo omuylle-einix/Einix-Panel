@@ -52,7 +52,13 @@ else
 		$na++;
 ?>
 		
- <p>Aucun message n'a été enregistré..</p>
+			<div class="nleft">
+				<div class="ntitle"><span style="position:relative;top:5px;">Aucun Téléchargement disponible pour le moment</span></div>
+				<div class="autor"></div>
+			</div>
+			<div class="download"><div class="sepl"></div><img src="themes/einix-panel/images/download.png" /></div>
+			<div class="clear"></div>
+			<div class="border"></div>
 
 <?php
 	}
