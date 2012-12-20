@@ -133,9 +133,15 @@ height:100%;
 background:#fff;
 }
 .titre{
-height:12px;
-background:#a4a2a2;
-border-bottom:12px solid #ADABAB;
+height:24px;
+background: rgb(117,116,116); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(117,116,116,1) 0%, rgba(173,171,171,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(117,116,116,1)), color-stop(100%,rgba(173,171,171,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(117,116,116,1) 0%,rgba(173,171,171,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(117,116,116,1) 0%,rgba(173,171,171,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(117,116,116,1) 0%,rgba(173,171,171,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(117,116,116,1) 0%,rgba(173,171,171,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757474', endColorstr='#adabab',GradientType=0 ); /* IE6-9 */
 font-size:16px;
 font-family: 'Droid Sans', sans-serif;
 padding:0 7px;
