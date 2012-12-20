@@ -35,7 +35,10 @@ else
 		$na++;
 ?>
 
- <p>Aucun message n'a été enregistré..</p>
+			<div class="memberpic">
+				<img src="modules/User/images/noavatar.png"/>
+				<div class="mname">You?</div>
+			</div>	
 
 <?php
 	}
