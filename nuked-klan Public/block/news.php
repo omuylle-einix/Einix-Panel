@@ -9,7 +9,7 @@ $compteur = 0;
 while (list($titre, $auteur, $id) = mysql_fetch_array($sql))
 {
 
-    $sql2 = mysql_query("SELECT im_id FROM ".COMMENT_TABLE." WHERE im_id = '{$TabNews['id']}' AND module = 'news'");
+    $sql2 = mysql_query("SELECT im_id FROM ".COMMENT_TABLE." WHERE im_id = '" . $id . "' AND module = 'news'");
     $nb_comment = mysql_num_rows($sql2);
 
 	$titre = stripslashes($titre);
@@ -25,7 +25,7 @@ while (list($titre, $auteur, $id) = mysql_fetch_array($sql))
 				<div class="ntitle"><a href="index.php?file=News&op=index_comment&news_id=<?php echo $id; ?>"/><?php echo $titre; ?></a></div>
 				<div class="autor">Autor: <?php echo $auteur ?></div>
 			</div>
-			<div class="comment"><div class="sepl"></div><a href="#"><?php echo $nb_comment; ?></A></div>
+			<div class="comment"><div class="sepl"></div><a href="index.php?file=News&op=index_comment&news_id=<?php echo $id; ?>"><?php echo $nb_comment; ?></A></div>
 			<div class="clear"></div>
 			<div class="border"></div>
 		
