@@ -36,7 +36,12 @@ else
 		$na++;
 ?>
 
- <p>Aucun message n'a été enregistré..</p>
+			<div class="nleft">
+				<div class="ntitle"><span style="position:relative;top:5px;">Aucun post dans le forum pour le moment</span></div>
+			</div>
+			<div class="forum"><div class="sepl"></div><img src="themes/einix-panel/images/forum.png" /></div>
+			<div class="clear"></div>
+			<div class="border"></div>
 
 
 <?php
