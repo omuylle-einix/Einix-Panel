@@ -15,7 +15,7 @@ if (!$user)
 					<div id="msg"><input id="pseudo" name="pseudo" value="Pseudo" type="text" autocomplete="on" placeholder="Username"></div>
 					<div id="compte"><input id="pass" name="pass" value="******" type="password" placeholder="Password"></div>
 					<div id="submit"><button type="submit">Sign in</button></div>
-					<div id="joinus">Join Us</div>
+					<div id="joinus"><a href="index.php?file=User&op=reg_screen">Join Us</a></div>
 				</div>
 				<div class="clear"></div>
             </form>
