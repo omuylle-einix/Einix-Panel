@@ -65,7 +65,7 @@ function top()
 <div id="<?php echo !checkHome() ? 'big' : '' ; ?>">
 <div id="<?php echo !checkHome() ? 'bigc' : '' ; ?>">
 <?php if(checkHome() == true){ ?>
-<div id="tuiles">
+<div class="tuiles">
 	<div id="left">
 		<?php include(dirname(__FILE__) . '/block/news.php'); ?>
 <?php } ?>
@@ -83,7 +83,7 @@ function top()
 	</div>
 </div>
 
-<div id="tuiles">
+<div class="tuiles">
 	<div id="left">
 		<?php include(dirname(__FILE__) . '/block/telechargement.php'); ?>
 	</div>
@@ -92,7 +92,7 @@ function top()
 		<?php include(dirname(__FILE__) . '/block/membre.php'); ?>
 	</div>
 </div>
-<div id="tuiles">
+<div class="tuiles">
 	<div id="left">
 		<?php include(dirname(__FILE__) . '/block/gallery.php'); ?>
 	</div>

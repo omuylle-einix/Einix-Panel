@@ -116,7 +116,7 @@ font-family: 'Droid Sans', sans-serif;
 		}
 
 /* Mise en place des tuiles */
-#tuiles{
+.tuiles{
 margin-top:10px;
 height:260px;
 }
