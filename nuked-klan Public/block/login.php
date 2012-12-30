@@ -28,7 +28,7 @@ else
 {
     if($user >= 3)
     {
-        $admin = '<a style="color:#5B5B5B; font-size:0.8em;" href="index.php?file=Admin" title="Panneau d\'administration">- Admin</a>';
+        $admin = ' - <a href="index.php?file=Admin" title="Panneau d\'administration">Admin</a>';
     }
 	if ($avatar != "off")
 	{
@@ -51,7 +51,7 @@ else
 				<div id="loginprof">
 					Bienvenue, <?php echo $user[2]; ?><br />
 					Vous avez <a href="#"><?php echo $user[5]; ?> messages</a><br /><br />
-					<div id="compte"><a href="index.php?file=User">Mon compte</a> - <a href="index.php?file=User&nuked_nude=index&op=logout">Deconnexion</a></div>
+					<div id="compte"><a href="index.php?file=User">Mon compte</a> - <a href="index.php?file=User&nuked_nude=index&op=logout">Deconnexion</a><?php echo $admin; ?></div>
 					
 				</div>
 				<div class="clear"></div>
