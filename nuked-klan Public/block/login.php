@@ -50,7 +50,7 @@ else
             <form id="loginForm" action="index.php?file=User&amp;nuked_nude=index&amp;op=login" method="post">
 				<div id="loginprof">
 					Bienvenue, <?php echo $user[2]; ?><br />
-					Vous avez <a href="#"><?php echo $user[5]; ?> messages</a><br /><br />
+					Vous avez <a href="index.php?file=Userbox"><?php echo $user[5]; ?> messages</a><br /><br />
 					<div id="compte"><a href="index.php?file=User">Mon compte</a> - <a href="index.php?file=User&nuked_nude=index&op=logout">Deconnexion</a><?php echo $admin; ?></div>
 					
 				</div>
